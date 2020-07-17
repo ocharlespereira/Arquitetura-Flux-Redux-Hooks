@@ -21,39 +21,37 @@ export default function Cart() {
           </tr>
         </thead>
         <tbody>
-          {cart.map(product => (
-            <tr>
-              <td>
-                <img
-                  src="https://static.netshoes.com.br/produtos/tenis-nike-superrep-go-feminino/39/HZM-3551-939/HZM-3551-939_zoom1.jpg?ts=1584659721"
-                  alt="Tenis Rosa"
-                />
-              </td>
-              <td>
-                <strong>Tênis Nike SuperRep Go Feminino - Pink e Branco</strong>
-                <span>R$ 499,99</span>
-              </td>
-              <td>
-                <div>
-                  <button type="button">
-                    <MdRemoveCircleOutline size={20} color="#7159c1" />
-                  </button>
-                  <input type="number" readOnly value={1} />
-                  <button type="button">
-                    <MdAddCircleOutline size={20} color="#7159c1" />
-                  </button>
-                </div>
-              </td>
-              <td>
-                <strong>R$ 499,99</strong>
-              </td>
-              <td>
+          <tr>
+            <td>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-nike-superrep-go-feminino/39/HZM-3551-939/HZM-3551-939_zoom1.jpg?ts=1584659721"
+                alt="Tenis Rosa"
+              />
+            </td>
+            <td>
+              <strong>Tênis Nike SuperRep Go Feminino - Pink e Branco</strong>
+              <span>R$ 499,99</span>
+            </td>
+            <td>
+              <div>
                 <button type="button">
-                  <MdDelete size={20} color="#7159c1" />
+                  <MdRemoveCircleOutline size={20} color="#7159c1" />
                 </button>
-              </td>
-            </tr>
-          ))}
+                <input type="number" readOnly value={1} />
+                <button type="button">
+                  <MdAddCircleOutline size={20} color="#7159c1" />
+                </button>
+              </div>
+            </td>
+            <td>
+              <strong>R$ 499,99</strong>
+            </td>
+            <td>
+              <button type="button">
+                <MdDelete size={20} color="#7159c1" />
+              </button>
+            </td>
+          </tr>
         </tbody>
       </ProductTable>
 
